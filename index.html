@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація jQuery UI та Owl Carousel</title>
+    
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Демонстрація jQuery UI та Owl Carousel</h1>
+            <p class="subtitle">Інтерактивні елементи для сучасного веб-дизайну</p>
+        </header>
+        
+        <div class="content">
+            <!-- Акордеон -->
+            <section class="widget">
+                <h2>Акордеон (Accordion)</h2>
+                <div id="accordion">
+                    <h3>Розділ 1</h3>
+                    <div>
+                        <p>Це вміст першого розділу акордеона. Тут може бути будь-яка інформація.</p>
+                        <p>jQuery UI Accordion дозволяє ефективно організувати контент, економлячи місце на сторінці.</p>
+                    </div>
+                    <h3>Розділ 2</h3>
+                    <div>
+                        <p>Це вміст другого розділу. Користувачі можуть легко перемикатися між розділами, щоб отримати потрібну інформацію.</p>
+                        <ul>
+                            <li>Елемент списку 1</li>
+                            <li>Елемент списку 2</li>
+                            <li>Елемент списку 3</li>
+                        </ul>
+                    </div>
+                    <h3>Розділ 3</h3>
+                    <div>
+                        <p>Третій розділ акордеона демонструє гнучкість цього елементу інтерфейсу.</p>
+                        <p>Користувач може розгортати та згортати розділи за потребою, що робить навігацію зручною та інтуїтивною.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Datepicker -->
+            <section class="widget">
+                <h2>Вибір дати (Datepicker)</h2>
+                <p>Оберіть дату: <input type="text" id="datepicker"></p>
+                <p class="description">Цей елемент дозволяє користувачам зручно вибирати дату з календаря.</p>
+            </section>
+            
+            <!-- Slider -->
+            <section class="widget">
+                <h2>Повзунок (Slider)</h2>
+                <div id="slider-container">
+                    <p>Поточне значення: <span id="slider-value">50</span></p>
+                    <div id="slider"></div>
+                    <p class="description">Перетягніть повзунок, щоб змінити значення.</p>
+                </div>
+            </section>
+            
+            <!-- Налаштування -->
+            <section class="widget">
+                <h2>Налаштування стилів</h2>
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="font-size">Розмір шрифту:</label>
+                        <select id="font-size">
+                            <option value="14px">Маленький</option>
+                            <option value="16px" selected>Середній</option>
+                            <option value="18px">Великий</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="theme">Тема кольорів:</label>
+                        <select id="theme">
+                            <option value="default" selected>Стандартна</option>
+                            <option value="dark">Темна</option>
+                            <option value="blue">Синя</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Owl Carousel -->
+            <section class="widget slider-section">
+                <h2>Наш слайдер Owl Carousel</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/slide1.jpg" alt="Слайд 1">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide2.jpg" alt="Слайд 2">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide3.jpg" alt="Слайд 3">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide4.jpg" alt="Слайд 4">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide5.jpg" alt="Слайд 5">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide6.jpg" alt="Слайд 6">
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>Демонстрація створена з використанням <span class="highlight">jQuery UI</span> та <span class="highlight">Owl Carousel</span></p>
+        </footer>
+    </div>
+
+    <!-- Підключення JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
